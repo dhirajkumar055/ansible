@@ -1,0 +1,11 @@
+---
+
+- name: Demo use of ansible vault
+  hosts: all
+  vars_files:
+      - secret
+  
+  tasks: 
+    - name: Retrieve sensitive data frm secret file
+      debug: msg="Mobile number of {{item.value.name}} is {{item.value.mobile}}."
+      with_dict: "{{contacts}}"
