@@ -1,0 +1,8 @@
+---
+
+- name: This playbook will demontrate the use of ping anible module
+  hosts: all
+  
+  tasks:
+    - name: This task will ping the machine
+      ping: 

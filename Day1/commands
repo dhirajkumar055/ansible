@@ -1,0 +1,34 @@
+docker --version
+anible --version
+docker images
+https://hub.docker.com/
+docker run hello-world
+sudo service docker start
+docker ps : containers that are running
+docker run -it ubuntu bin/bash : i-interactive t-terminal
+docker stop 29b3f05d2c3
+docker run -dit ubuntu bin/bash : background
+docker stop $(docker ps -q)
+docker ps -a: shows running as well as stopped
+docker ps -aq : shows all running pid
+docker ps -q
+docker rm $(docker ps -aq) : we can use the ports now
+1 port can be used by one container
+docker rmi slkdf3e03 : delete the image
+docker build -t amdocs/ubuntu-ansible . : -t for tag
+docker run -d -p 2000:22 -p2500:80 amdocs/ubuntu-ansible : to give name use -name username
+docker inspect 8ebf953df528
+docker inspect -f {{.NetworkSettings.IPAddress}} 8ebf953df528 : for Ip address
+ssh tektutor@172.17.0.25
+aNotepad.com
+tektutor.org
+ansible -i hosts all -m ping :-m for modules, -i for  inventory
+docker exec -it d1e336c4feb9 bash;hostname : hostname gives container id
+ansible -i hosts all -m shell -a "ls -l"
+ansible -i hosts all -m shell -a "ls -lR /"
+modules are stored in 
+ansible -i hosts all -m shell -a "whoami" -vvv :-vvv for detailed info
+
+
+
+
