@@ -1,0 +1,14 @@
+---
+
+- name: Demonstrate installation of nginx 
+  hosts: all
+  become: yes
+  vars:
+   - proxy_env: 
+        http_proxy: http://10.19.16.165:8080
+        https_proxy: https://10.19.16.165:8080
+
+  tasks:
+   - name: Install a bunch of ubuntu utilities
+     apt: name=tree,cscope,vim state=latest update_cache=yes
+     environment: "{{proxy_env}}"

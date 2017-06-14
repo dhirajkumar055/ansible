@@ -1,0 +1,50 @@
+---
+
+- name: Demonstrate installation of nginx 
+  hosts: all
+  become: yes
+  vars:
+   - proxy_env: 
+        http_proxy: http://10.19.16.165:8080
+        https_proxy: https://10.19.16.165:8080
+   - automation_tool: Ansible
+   - provisioner_tool: Dock	
+
+  tasks:
+   - name: Instal nginx web server on Centos
+     yum: name=epel-release state=latest
+     environment: "{{proxy_env}}"
+     when: ansible_os_family == "RedHat"
+   
+   - name: Instal nginx web server on Centos
+     yum: name=nginx state=latest
+     environment: "{{proxy_env}}"
+     when: ansible_os_family == "RedHat"
+
+   - name: Instal nginx web server on Ubuntu
+     apt: name=nginx state=latest update_cache=yes
+     environment: "{{proxy_env}}"
+     when: ansible_os_family == "Debian"
+
+   - name: configure nginx on Centos
+     copy: src=nginx_centos.conf dest=/etc/nginx/nginx.conf
+     notify:
+       - Restart nginx web server
+     when: ansible_os_family == "RedHat"
+
+   - name: configure nginx on Ubuntu
+     copy: src=nginx_ubuntu.conf dest=/etc/nginx/nginx.conf
+     notify:
+       - Restart nginx web server
+     when: ( ansible_os_family == "Debian" ) 
+
+   - name: Deploy website on nginx
+     template: src=index.html.j2 dest=/usr/share/nginx/html/index.html
+     notify:
+       - Restart nginx server
+      
+  handlers:
+   - name: Restart nginx web server
+     service: name=nginx state=restarted
+     listen: Restart nginx server 
+

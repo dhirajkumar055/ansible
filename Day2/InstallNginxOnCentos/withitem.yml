@@ -1,0 +1,17 @@
+---
+
+- name: Demo of with_item
+  hosts: dev1
+
+  tasks:
+    - name: Let us use with_item in this task
+      debug: msg="Mobile number of {{item.name}} is {{item.mobile}}."
+      with_items:
+        - { name: "Dheeraj", mobile: "822-387-9668"}
+        - { name: "Manish", mobile: "744-743-5271"}
+      
+    - name: Iterate the with_item
+      debug: msg="{{item}}"
+      with_items:
+        - 100
+        - 200 

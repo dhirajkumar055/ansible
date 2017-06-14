@@ -1,0 +1,9 @@
+---
+
+- hosts: localhost
+ 
+  tasks:
+    - debug: msg="{{item[0]}} {{item[1]}}."
+      with_together:
+      - [ 'a', 'b', 'c' ]
+      - [ 3, 4, 5]

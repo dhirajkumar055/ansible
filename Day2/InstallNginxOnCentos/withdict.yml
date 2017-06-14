@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  vars_files:
+    - contacts
+
+  tasks:
+    - name: Print dictionary values
+      debug: msg="{{item.key}} Name is {{item.value.name}} and mobile is {{item.value.mobile}}."
+      with_dict: "{{contacts}}"

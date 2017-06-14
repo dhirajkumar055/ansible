@@ -1,0 +1,28 @@
+[all]
+qa1 ansible_port=2000 ansible_user=root ansible_become_password=root
+qa2 ansible_port=3000 ansible_user=root ansible_become_password=root
+qa3 ansible_port=4000 ansible_user=root ansible_become_password=root
+dev1 ansible_port=5000 ansible_user=tektutor ansible_become_password=tektutor
+dev2 ansible_port=6000 ansible_user=tektutor ansible_become_password=tektutor
+dev3 ansible_port=7000 ansible_user=tektutor ansible_become_password=tektutor
+
+[qa]
+qa1 ansible_port=2000 
+qa2 ansible_port=3000 
+qa3 ansible_port=4000 
+
+[dev]
+dev1 ansible_port=5000 
+dev2 ansible_port=6000 
+dev3 ansible_port=7000 
+
+[all:vars]
+ansible_host=localhost
+
+[qa:vars]
+ansible_user=root
+ansible_become_password=root
+
+[dev:vars]
+ansible_user=tektutor
+ansible_become_password=tektutor

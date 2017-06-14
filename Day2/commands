@@ -1,0 +1,26 @@
+all services comes with guest os
+we manually need to start services in container
+
+exec -it d1e336c4feb9 bash
+docker ps -a
+docker swarm manager for clustering
+docker swarm manager manages docker swarm nodes
+docker swarm nodes have docker server installed on them
+docker swarm init
+ansible-doc service
+with_items : keyword
+item : keyword
+docker run -d -p 3000:22 -p 3500:80 amdocs/ubuntu-ansible
+ansible -i hosts qa -m ping
+/etc/ansible/ansible.cfg
+
+curl http://localhost:5000
+stride=3 : multiple of 3 
+with_items-->item.key, item.itemname
+with_sequence-->sequence of numbers for env name
+withdict-->create dictionary file and use it, item.key, item.itemname
+with_nested:  multiple mapping
+with_together: one-one mapping
+
+
+

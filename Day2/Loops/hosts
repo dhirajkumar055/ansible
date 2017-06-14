@@ -1,0 +1,2 @@
+[all]
+172.17.0.25 ansible_ssh_host=localhost ansible_ssh_port=2000 ansible_ssh_user=tektutor ansible_ssh_password=tektutor ansible_become_user=root ansible_become_password=tektutor ansible_private_key_file=/home/train/.ssh/id_rsa 

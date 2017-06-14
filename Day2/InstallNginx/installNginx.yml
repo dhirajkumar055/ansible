@@ -1,0 +1,32 @@
+---
+
+- name: Demonstrate installation of nginx 
+  hosts: all
+  become: yes
+  vars:
+   - proxy_env: 
+        http_proxy: http://10.19.16.165:8080
+        https_proxy: https://10.19.16.165:8080
+   - automation_tool: Ansible
+   - provisioner_tool: Docker	
+
+  tasks:
+   - name: Instal nginx web server
+     apt: name=nginx state=present update_cache=yes
+     environment: "{{proxy_env}}"
+
+   - name: configure nginx
+     copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+     notify:
+       - Restart nginx web server
+
+   - name: Deploy website no nginx
+     template: src=index.html.j2 dest=/usr/share/nginx/html/index.html
+     notify:
+       - Restart nginx web server
+ 
+  handlers:
+   - name: Restart nginx web server
+     service: name=nginx state=restarted
+   
+

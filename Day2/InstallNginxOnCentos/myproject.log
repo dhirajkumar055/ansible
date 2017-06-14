@@ -1,0 +1,1159 @@
+2017-06-13 12:55:28,979 p=17835 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 12:55:29,035 p=17835 u=train |  TASK [setup] *******************************************************************
+2017-06-13 12:55:52,448 p=17835 u=train |  ok: [qa3]
+2017-06-13 12:55:52,469 p=17835 u=train |  ok: [qa1]
+2017-06-13 12:55:52,618 p=17835 u=train |  ok: [qa2]
+2017-06-13 12:55:52,623 p=17835 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 12:57:19,033 p=17835 u=train |  fatal: [qa1]: FAILED! => {"changed": false, "failed": true, "msg": "No package matching 'nginx' found available, installed or updated", "rc": 126, "results": ["No package matching 'nginx' found available, installed or updated"]}
+2017-06-13 12:57:19,057 p=17835 u=train |  fatal: [qa2]: FAILED! => {"changed": false, "failed": true, "msg": "No package matching 'nginx' found available, installed or updated", "rc": 126, "results": ["No package matching 'nginx' found available, installed or updated"]}
+2017-06-13 12:57:19,368 p=17835 u=train |  fatal: [qa3]: FAILED! => {"changed": false, "failed": true, "msg": "No package matching 'nginx' found available, installed or updated", "rc": 126, "results": ["No package matching 'nginx' found available, installed or updated"]}
+2017-06-13 12:57:19,370 p=17835 u=train |  	to retry, use: --limit @/home/train/JuneAnsible/Day2/InstallNginxOnCentos/installNginx.retry
+
+2017-06-13 12:57:19,371 p=17835 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 12:57:19,371 p=17835 u=train |  qa1                        : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 12:57:19,371 p=17835 u=train |  qa2                        : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 12:57:19,371 p=17835 u=train |  qa3                        : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 13:00:01,581 p=18155 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 13:00:01,629 p=18155 u=train |  TASK [setup] *******************************************************************
+2017-06-13 13:00:23,727 p=18155 u=train |  ok: [qa2]
+2017-06-13 13:00:24,160 p=18155 u=train |  ok: [qa3]
+2017-06-13 13:00:24,558 p=18155 u=train |  ok: [qa1]
+2017-06-13 13:00:24,561 p=18155 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 13:00:29,723 p=18155 u=train |  changed: [qa3]
+2017-06-13 13:00:29,792 p=18155 u=train |  changed: [qa1]
+2017-06-13 13:00:29,811 p=18155 u=train |  changed: [qa2]
+2017-06-13 13:00:29,834 p=18155 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 13:02:47,944 p=18155 u=train |  changed: [qa3]
+2017-06-13 13:02:48,200 p=18155 u=train |  changed: [qa1]
+2017-06-13 13:02:48,388 p=18155 u=train |  changed: [qa2]
+2017-06-13 13:02:48,395 p=18155 u=train |  TASK [Deploy website no nginx] *************************************************
+2017-06-13 13:02:50,842 p=18155 u=train |  changed: [qa3]
+2017-06-13 13:02:51,071 p=18155 u=train |  changed: [qa2]
+2017-06-13 13:02:51,124 p=18155 u=train |  changed: [qa1]
+2017-06-13 13:02:51,130 p=18155 u=train |  RUNNING HANDLER [Restart nginx web server] *************************************
+2017-06-13 13:02:53,290 p=18155 u=train |  changed: [qa2]
+2017-06-13 13:02:53,297 p=18155 u=train |  changed: [qa3]
+2017-06-13 13:02:53,302 p=18155 u=train |  changed: [qa1]
+2017-06-13 13:02:53,305 p=18155 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 13:02:53,305 p=18155 u=train |  qa1                        : ok=5    changed=4    unreachable=0    failed=0   
+2017-06-13 13:02:53,305 p=18155 u=train |  qa2                        : ok=5    changed=4    unreachable=0    failed=0   
+2017-06-13 13:02:53,305 p=18155 u=train |  qa3                        : ok=5    changed=4    unreachable=0    failed=0   
+2017-06-13 14:23:43,610 p=19295 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 14:23:43,658 p=19295 u=train |  TASK [setup] *******************************************************************
+2017-06-13 14:24:07,821 p=19295 u=train |  ok: [qa1]
+2017-06-13 14:24:07,918 p=19295 u=train |  ok: [qa2]
+2017-06-13 14:24:07,972 p=19295 u=train |  ok: [qa3]
+2017-06-13 14:24:07,975 p=19295 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 14:24:10,933 p=19295 u=train |  ok: [qa1]
+2017-06-13 14:24:10,959 p=19295 u=train |  ok: [qa3]
+2017-06-13 14:24:10,980 p=19295 u=train |  ok: [qa2]
+2017-06-13 14:24:10,983 p=19295 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 14:24:12,951 p=19295 u=train |  ok: [qa3]
+2017-06-13 14:24:13,077 p=19295 u=train |  ok: [qa2]
+2017-06-13 14:24:13,113 p=19295 u=train |  ok: [qa1]
+2017-06-13 14:24:13,140 p=19295 u=train |  TASK [configure nginx] *********************************************************
+2017-06-13 14:24:16,214 p=19295 u=train |  changed: [qa1]
+2017-06-13 14:24:16,359 p=19295 u=train |  changed: [qa2]
+2017-06-13 14:24:16,391 p=19295 u=train |  changed: [qa3]
+2017-06-13 14:24:16,444 p=19295 u=train |  TASK [Deploy website no nginx] *************************************************
+2017-06-13 14:24:18,713 p=19295 u=train |  ok: [qa1]
+2017-06-13 14:24:18,814 p=19295 u=train |  ok: [qa2]
+2017-06-13 14:24:18,890 p=19295 u=train |  ok: [qa3]
+2017-06-13 14:24:18,892 p=19295 u=train |  RUNNING HANDLER [Restart nginx web server] *************************************
+2017-06-13 14:24:21,161 p=19295 u=train |  changed: [qa2]
+2017-06-13 14:24:21,306 p=19295 u=train |  changed: [qa3]
+2017-06-13 14:24:21,547 p=19295 u=train |  changed: [qa1]
+2017-06-13 14:24:21,556 p=19295 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 14:24:21,560 p=19295 u=train |  qa1                        : ok=6    changed=2    unreachable=0    failed=0   
+2017-06-13 14:24:21,560 p=19295 u=train |  qa2                        : ok=6    changed=2    unreachable=0    failed=0   
+2017-06-13 14:24:21,560 p=19295 u=train |  qa3                        : ok=6    changed=2    unreachable=0    failed=0   
+2017-06-13 14:51:41,799 p=20393 u=train |  qa3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:51:41,967 p=20393 u=train |  qa2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:51:42,158 p=20393 u=train |  dev1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:51:42,195 p=20393 u=train |  qa1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:51:42,612 p=20393 u=train |  dev2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:52:02,695 p=20393 u=train |  dev3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:53:05,079 p=20617 u=train |  qa2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:53:05,182 p=20617 u=train |  qa1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:53:05,277 p=20617 u=train |  qa3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-06-13 14:55:44,978 p=20712 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 14:55:45,016 p=20712 u=train |  TASK [setup] *******************************************************************
+2017-06-13 14:56:10,544 p=20712 u=train |  ok: [dev1]
+2017-06-13 14:56:10,756 p=20712 u=train |  ok: [dev2]
+2017-06-13 14:56:10,821 p=20712 u=train |  ok: [qa1]
+2017-06-13 14:56:10,878 p=20712 u=train |  ok: [qa3]
+2017-06-13 14:56:10,878 p=20712 u=train |  ok: [qa2]
+2017-06-13 14:56:32,448 p=20712 u=train |  ok: [dev3]
+2017-06-13 14:56:32,461 p=20712 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 14:56:34,434 p=20712 u=train |  ok: [qa1]
+2017-06-13 14:56:34,695 p=20712 u=train |  fatal: [dev1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to localhost closed.\r\n", "module_stdout": "\r\nTraceback (most recent call last):\r\n  File \"/tmp/ansible_M6mut3/ansible_module_yum.py\", line 25, in <module>\r\n    import yum\r\nImportError: No module named yum\r\n", "msg": "MODULE FAILURE"}
+2017-06-13 14:56:34,828 p=20712 u=train |  fatal: [dev2]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to localhost closed.\r\n", "module_stdout": "\r\nTraceback (most recent call last):\r\n  File \"/tmp/ansible_puAx5z/ansible_module_yum.py\", line 25, in <module>\r\n    import yum\r\nImportError: No module named yum\r\n", "msg": "MODULE FAILURE"}
+2017-06-13 14:56:35,361 p=20712 u=train |  ok: [qa3]
+2017-06-13 14:56:35,599 p=20712 u=train |  ok: [qa2]
+2017-06-13 14:56:35,870 p=20712 u=train |  fatal: [dev3]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to localhost closed.\r\n", "module_stdout": "\r\nTraceback (most recent call last):\r\n  File \"/tmp/ansible_CWK4iP/ansible_module_yum.py\", line 25, in <module>\r\n    import yum\r\nImportError: No module named yum\r\n", "msg": "MODULE FAILURE"}
+2017-06-13 14:56:35,877 p=20712 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 14:56:37,612 p=20712 u=train |  ok: [qa1]
+2017-06-13 14:56:37,671 p=20712 u=train |  ok: [qa2]
+2017-06-13 14:56:37,861 p=20712 u=train |  ok: [qa3]
+2017-06-13 14:56:37,893 p=20712 u=train |  TASK [configure nginx] *********************************************************
+2017-06-13 14:56:39,867 p=20712 u=train |  ok: [qa2]
+2017-06-13 14:56:40,149 p=20712 u=train |  ok: [qa1]
+2017-06-13 14:56:40,233 p=20712 u=train |  ok: [qa3]
+2017-06-13 14:56:40,261 p=20712 u=train |  TASK [Deploy website no nginx] *************************************************
+2017-06-13 14:56:42,076 p=20712 u=train |  ok: [qa1]
+2017-06-13 14:56:42,210 p=20712 u=train |  ok: [qa3]
+2017-06-13 14:56:42,336 p=20712 u=train |  ok: [qa2]
+2017-06-13 14:56:42,350 p=20712 u=train |  	to retry, use: --limit @/home/train/JuneAnsible/Day2/InstallNginxOnCentos/installNginx.retry
+
+2017-06-13 14:56:42,350 p=20712 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 14:56:42,350 p=20712 u=train |  dev1                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 14:56:42,361 p=20712 u=train |  dev2                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 14:56:42,365 p=20712 u=train |  dev3                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 14:56:42,373 p=20712 u=train |  qa1                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 14:56:42,392 p=20712 u=train |  qa2                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 14:56:42,405 p=20712 u=train |  qa3                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:08:38,523 p=21514 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 15:08:38,667 p=21514 u=train |  TASK [setup] *******************************************************************
+2017-06-13 15:09:03,659 p=21514 u=train |  ok: [qa2]
+2017-06-13 15:09:03,900 p=21514 u=train |  ok: [qa3]
+2017-06-13 15:09:04,466 p=21514 u=train |  ok: [dev2]
+2017-06-13 15:09:04,515 p=21514 u=train |  ok: [qa1]
+2017-06-13 15:09:04,563 p=21514 u=train |  ok: [dev1]
+2017-06-13 15:09:25,645 p=21514 u=train |  ok: [dev3]
+2017-06-13 15:09:25,659 p=21514 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 15:09:26,359 p=21514 u=train |  skipping: [dev1]
+2017-06-13 15:09:26,494 p=21514 u=train |  skipping: [dev2]
+2017-06-13 15:09:26,794 p=21514 u=train |  skipping: [dev3]
+2017-06-13 15:10:52,907 p=21514 u=train |  ok: [qa1]
+2017-06-13 15:10:52,923 p=21514 u=train |  ok: [qa2]
+2017-06-13 15:10:53,133 p=21514 u=train |  ok: [qa3]
+2017-06-13 15:10:53,148 p=21514 u=train |  TASK [Instal nginx web server] *************************************************
+2017-06-13 15:10:53,500 p=21514 u=train |  skipping: [dev1]
+2017-06-13 15:10:53,958 p=21514 u=train |  skipping: [dev2]
+2017-06-13 15:10:54,132 p=21514 u=train |  skipping: [dev3]
+2017-06-13 15:12:18,400 p=21514 u=train |  ok: [qa3]
+2017-06-13 15:12:18,440 p=21514 u=train |  ok: [qa2]
+2017-06-13 15:12:18,521 p=21514 u=train |  ok: [qa1]
+2017-06-13 15:12:18,536 p=21514 u=train |  TASK [configure nginx] *********************************************************
+2017-06-13 15:12:18,945 p=21514 u=train |  skipping: [dev1]
+2017-06-13 15:12:18,965 p=21514 u=train |  skipping: [dev2]
+2017-06-13 15:12:19,105 p=21514 u=train |  skipping: [dev3]
+2017-06-13 15:12:21,206 p=21514 u=train |  ok: [qa2]
+2017-06-13 15:12:21,360 p=21514 u=train |  ok: [qa1]
+2017-06-13 15:12:21,379 p=21514 u=train |  ok: [qa3]
+2017-06-13 15:12:21,388 p=21514 u=train |  TASK [Deploy website no nginx] *************************************************
+2017-06-13 15:12:23,251 p=21514 u=train |  ok: [qa3]
+2017-06-13 15:12:23,363 p=21514 u=train |  ok: [qa1]
+2017-06-13 15:12:23,709 p=21514 u=train |  ok: [qa2]
+2017-06-13 15:12:43,927 p=21514 u=train |  fatal: [dev1]: FAILED! => {"changed": true, "failed": true, "msg": "Destination directory /usr/share/nginx/html does not exist"}
+2017-06-13 15:12:44,214 p=21514 u=train |  fatal: [dev2]: FAILED! => {"changed": true, "failed": true, "msg": "Destination directory /usr/share/nginx/html does not exist"}
+2017-06-13 15:12:45,193 p=21514 u=train |  fatal: [dev3]: FAILED! => {"changed": true, "failed": true, "msg": "Destination directory /usr/share/nginx/html does not exist"}
+2017-06-13 15:12:45,214 p=21514 u=train |  	to retry, use: --limit @/home/train/JuneAnsible/Day2/InstallNginxOnCentos/installNginx.retry
+
+2017-06-13 15:12:45,214 p=21514 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 15:12:45,214 p=21514 u=train |  dev1                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 15:12:45,214 p=21514 u=train |  dev2                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 15:12:45,215 p=21514 u=train |  dev3                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 15:12:45,215 p=21514 u=train |  qa1                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:12:45,215 p=21514 u=train |  qa2                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:12:45,215 p=21514 u=train |  qa3                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:25:56,101 p=22695 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 15:25:56,154 p=22695 u=train |  TASK [setup] *******************************************************************
+2017-06-13 15:26:20,857 p=22695 u=train |  ok: [qa3]
+2017-06-13 15:26:21,380 p=22695 u=train |  ok: [qa2]
+2017-06-13 15:26:21,429 p=22695 u=train |  ok: [dev2]
+2017-06-13 15:26:21,457 p=22695 u=train |  ok: [qa1]
+2017-06-13 15:26:21,589 p=22695 u=train |  ok: [dev1]
+2017-06-13 15:26:42,290 p=22695 u=train |  ok: [dev3]
+2017-06-13 15:26:42,327 p=22695 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 15:26:42,626 p=22695 u=train |  skipping: [dev2]
+2017-06-13 15:26:42,665 p=22695 u=train |  skipping: [dev1]
+2017-06-13 15:26:42,866 p=22695 u=train |  skipping: [dev3]
+2017-06-13 15:28:07,583 p=22695 u=train |  ok: [qa1]
+2017-06-13 15:28:07,698 p=22695 u=train |  ok: [qa3]
+2017-06-13 15:28:07,779 p=22695 u=train |  ok: [qa2]
+2017-06-13 15:28:07,787 p=22695 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 15:28:08,150 p=22695 u=train |  skipping: [dev1]
+2017-06-13 15:28:08,184 p=22695 u=train |  skipping: [dev2]
+2017-06-13 15:28:08,365 p=22695 u=train |  skipping: [dev3]
+2017-06-13 15:29:32,514 p=22695 u=train |  ok: [qa3]
+2017-06-13 15:29:32,576 p=22695 u=train |  ok: [qa1]
+2017-06-13 15:29:32,599 p=22695 u=train |  ok: [qa2]
+2017-06-13 15:29:32,613 p=22695 u=train |  TASK [Instal nginx web server on Ubuntu] ***************************************
+2017-06-13 15:29:32,969 p=22695 u=train |  skipping: [qa1]
+2017-06-13 15:29:33,124 p=22695 u=train |  skipping: [qa3]
+2017-06-13 15:29:33,133 p=22695 u=train |  skipping: [qa2]
+2017-06-13 15:29:54,881 p=22695 u=train |  fatal: [dev3]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: ubuntu_cache"}
+2017-06-13 15:29:54,904 p=22695 u=train |  fatal: [dev1]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: ubuntu_cache"}
+2017-06-13 15:29:54,971 p=22695 u=train |  fatal: [dev2]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: ubuntu_cache"}
+2017-06-13 15:29:54,974 p=22695 u=train |  TASK [configure nginx on Centos] ***********************************************
+2017-06-13 15:29:57,247 p=22695 u=train |  ok: [qa2]
+2017-06-13 15:29:57,269 p=22695 u=train |  ok: [qa1]
+2017-06-13 15:29:57,292 p=22695 u=train |  ok: [qa3]
+2017-06-13 15:29:57,295 p=22695 u=train |  TASK [configure nginx on Ubuntu] ***********************************************
+2017-06-13 15:29:57,512 p=22695 u=train |  skipping: [qa3]
+2017-06-13 15:29:57,514 p=22695 u=train |  skipping: [qa2]
+2017-06-13 15:29:57,549 p=22695 u=train |  skipping: [qa1]
+2017-06-13 15:29:57,557 p=22695 u=train |  TASK [Deploy website on nginx] *************************************************
+2017-06-13 15:29:59,321 p=22695 u=train |  ok: [qa3]
+2017-06-13 15:29:59,372 p=22695 u=train |  ok: [qa1]
+2017-06-13 15:29:59,394 p=22695 u=train |  ok: [qa2]
+2017-06-13 15:29:59,414 p=22695 u=train |  	to retry, use: --limit @/home/train/JuneAnsible/Day2/InstallNginxOnCentos/installNginx.retry
+
+2017-06-13 15:29:59,415 p=22695 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 15:29:59,415 p=22695 u=train |  dev1                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 15:29:59,415 p=22695 u=train |  dev2                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 15:29:59,415 p=22695 u=train |  dev3                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 15:29:59,415 p=22695 u=train |  qa1                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:29:59,416 p=22695 u=train |  qa2                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:29:59,416 p=22695 u=train |  qa3                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:35:40,402 p=23759 u=train |  ERROR! You must specify a playbook file to run
+2017-06-13 15:35:45,486 p=23763 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 15:35:45,589 p=23763 u=train |  TASK [setup] *******************************************************************
+2017-06-13 15:36:08,726 p=23763 u=train |  ok: [qa2]
+2017-06-13 15:36:10,353 p=23763 u=train |  ok: [qa1]
+2017-06-13 15:36:10,604 p=23763 u=train |  ok: [dev1]
+2017-06-13 15:36:10,643 p=23763 u=train |  ok: [qa3]
+2017-06-13 15:36:10,692 p=23763 u=train |  ok: [dev2]
+2017-06-13 15:36:30,149 p=23763 u=train |  ok: [dev3]
+2017-06-13 15:36:30,166 p=23763 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 15:36:30,639 p=23763 u=train |  skipping: [dev2]
+2017-06-13 15:36:30,876 p=23763 u=train |  skipping: [dev1]
+2017-06-13 15:36:31,031 p=23763 u=train |  skipping: [dev3]
+2017-06-13 15:37:55,322 p=23763 u=train |  ok: [qa3]
+2017-06-13 15:37:55,403 p=23763 u=train |  ok: [qa1]
+2017-06-13 15:37:55,721 p=23763 u=train |  ok: [qa2]
+2017-06-13 15:37:55,729 p=23763 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 15:37:56,058 p=23763 u=train |  skipping: [dev1]
+2017-06-13 15:37:56,236 p=23763 u=train |  skipping: [dev2]
+2017-06-13 15:37:56,434 p=23763 u=train |  skipping: [dev3]
+2017-06-13 15:39:19,144 p=23763 u=train |  ok: [qa3]
+2017-06-13 15:39:19,841 p=23763 u=train |  ok: [qa1]
+2017-06-13 15:39:20,087 p=23763 u=train |  ok: [qa2]
+2017-06-13 15:39:20,101 p=23763 u=train |  TASK [Instal nginx web server on Ubuntu] ***************************************
+2017-06-13 15:39:20,445 p=23763 u=train |  skipping: [qa1]
+2017-06-13 15:39:20,536 p=23763 u=train |  skipping: [qa2]
+2017-06-13 15:39:20,626 p=23763 u=train |  skipping: [qa3]
+2017-06-13 15:41:22,666 p=23763 u=train |  changed: [dev1]
+2017-06-13 15:41:25,968 p=23763 u=train |  changed: [dev2]
+2017-06-13 15:41:25,972 p=23763 u=train |  changed: [dev3]
+2017-06-13 15:41:25,976 p=23763 u=train |  TASK [configure nginx on Centos] ***********************************************
+2017-06-13 15:41:26,377 p=23763 u=train |  skipping: [dev1]
+2017-06-13 15:41:26,749 p=23763 u=train |  skipping: [dev2]
+2017-06-13 15:41:26,811 p=23763 u=train |  skipping: [dev3]
+2017-06-13 15:41:48,950 p=23763 u=train |  ok: [qa1]
+2017-06-13 15:41:49,015 p=23763 u=train |  ok: [qa2]
+2017-06-13 15:41:49,039 p=23763 u=train |  ok: [qa3]
+2017-06-13 15:41:49,042 p=23763 u=train |  TASK [configure nginx on Ubuntu] ***********************************************
+2017-06-13 15:41:49,408 p=23763 u=train |  skipping: [qa1]
+2017-06-13 15:41:49,480 p=23763 u=train |  skipping: [qa3]
+2017-06-13 15:41:49,586 p=23763 u=train |  skipping: [qa2]
+2017-06-13 15:41:51,527 p=23763 u=train |  changed: [dev3]
+2017-06-13 15:41:51,760 p=23763 u=train |  changed: [dev1]
+2017-06-13 15:41:51,769 p=23763 u=train |  changed: [dev2]
+2017-06-13 15:41:51,772 p=23763 u=train |  TASK [Deploy website on nginx] *************************************************
+2017-06-13 15:41:54,536 p=23763 u=train |  changed: [dev2]
+2017-06-13 15:41:54,888 p=23763 u=train |  ok: [qa1]
+2017-06-13 15:41:55,211 p=23763 u=train |  ok: [qa2]
+2017-06-13 15:41:55,324 p=23763 u=train |  changed: [dev1]
+2017-06-13 15:41:55,329 p=23763 u=train |  ok: [qa3]
+2017-06-13 15:41:56,165 p=23763 u=train |  changed: [dev3]
+2017-06-13 15:41:56,174 p=23763 u=train |  RUNNING HANDLER [Restart nginx web server] *************************************
+2017-06-13 15:41:58,980 p=23763 u=train |  changed: [dev3]
+2017-06-13 15:41:59,005 p=23763 u=train |  changed: [dev2]
+2017-06-13 15:41:59,183 p=23763 u=train |  changed: [dev1]
+2017-06-13 15:41:59,209 p=23763 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 15:41:59,210 p=23763 u=train |  dev1                       : ok=5    changed=4    unreachable=0    failed=0   
+2017-06-13 15:41:59,210 p=23763 u=train |  dev2                       : ok=5    changed=4    unreachable=0    failed=0   
+2017-06-13 15:41:59,210 p=23763 u=train |  dev3                       : ok=5    changed=4    unreachable=0    failed=0   
+2017-06-13 15:41:59,211 p=23763 u=train |  qa1                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:41:59,211 p=23763 u=train |  qa2                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 15:41:59,211 p=23763 u=train |  qa3                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 16:12:37,960 p=26963 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 16:12:38,060 p=26963 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:13:02,129 p=26963 u=train |  ok: [dev2]
+2017-06-13 16:13:02,730 p=26963 u=train |  ok: [qa1]
+2017-06-13 16:13:03,946 p=26963 u=train |  ok: [dev1]
+2017-06-13 16:13:04,128 p=26963 u=train |  ok: [qa2]
+2017-06-13 16:13:04,156 p=26963 u=train |  ok: [qa3]
+2017-06-13 16:13:24,820 p=26963 u=train |  ok: [dev3]
+2017-06-13 16:13:24,823 p=26963 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 16:13:25,161 p=26963 u=train |  skipping: [dev2]
+2017-06-13 16:13:25,232 p=26963 u=train |  skipping: [dev3]
+2017-06-13 16:13:25,255 p=26963 u=train |  skipping: [dev1]
+2017-06-13 16:14:49,570 p=26963 u=train |  ok: [qa1]
+2017-06-13 16:14:49,622 p=26963 u=train |  ok: [qa2]
+2017-06-13 16:14:49,942 p=26963 u=train |  ok: [qa3]
+2017-06-13 16:14:49,948 p=26963 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 16:14:50,525 p=26963 u=train |  skipping: [dev1]
+2017-06-13 16:14:50,579 p=26963 u=train |  skipping: [dev2]
+2017-06-13 16:14:50,733 p=26963 u=train |  skipping: [dev3]
+2017-06-13 16:16:12,925 p=26963 u=train |  ok: [qa1]
+2017-06-13 16:16:14,043 p=26963 u=train |  ok: [qa2]
+2017-06-13 16:16:14,198 p=26963 u=train |  ok: [qa3]
+2017-06-13 16:16:14,201 p=26963 u=train |  TASK [Instal nginx web server on Ubuntu] ***************************************
+2017-06-13 16:16:14,606 p=26963 u=train |  skipping: [qa3]
+2017-06-13 16:16:14,693 p=26963 u=train |  skipping: [qa1]
+2017-06-13 16:16:14,757 p=26963 u=train |  skipping: [qa2]
+2017-06-13 16:17:02,074 p=26963 u=train |  ok: [dev1]
+2017-06-13 16:17:04,376 p=26963 u=train |  ok: [dev3]
+2017-06-13 16:17:04,904 p=26963 u=train |  ok: [dev2]
+2017-06-13 16:17:04,907 p=26963 u=train |  TASK [configure nginx on Centos] ***********************************************
+2017-06-13 16:17:05,282 p=26963 u=train |  skipping: [dev1]
+2017-06-13 16:17:05,470 p=26963 u=train |  skipping: [dev2]
+2017-06-13 16:17:05,598 p=26963 u=train |  skipping: [dev3]
+2017-06-13 16:17:07,473 p=26963 u=train |  ok: [qa2]
+2017-06-13 16:17:07,764 p=26963 u=train |  ok: [qa3]
+2017-06-13 16:17:07,802 p=26963 u=train |  ok: [qa1]
+2017-06-13 16:17:07,806 p=26963 u=train |  TASK [configure nginx on Ubuntu] ***********************************************
+2017-06-13 16:17:08,124 p=26963 u=train |  skipping: [qa2]
+2017-06-13 16:17:08,171 p=26963 u=train |  skipping: [qa1]
+2017-06-13 16:17:08,453 p=26963 u=train |  skipping: [qa3]
+2017-06-13 16:17:09,734 p=26963 u=train |  ok: [dev3]
+2017-06-13 16:17:09,927 p=26963 u=train |  ok: [dev1]
+2017-06-13 16:17:10,075 p=26963 u=train |  ok: [dev2]
+2017-06-13 16:17:10,083 p=26963 u=train |  TASK [Deploy website on nginx] *************************************************
+2017-06-13 16:17:12,607 p=26963 u=train |  ok: [qa1]
+2017-06-13 16:17:12,777 p=26963 u=train |  ok: [qa2]
+2017-06-13 16:17:13,004 p=26963 u=train |  ok: [qa3]
+2017-06-13 16:17:13,225 p=26963 u=train |  ok: [dev1]
+2017-06-13 16:17:13,280 p=26963 u=train |  ok: [dev2]
+2017-06-13 16:17:14,274 p=26963 u=train |  ok: [dev3]
+2017-06-13 16:17:14,322 p=26963 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:17:14,322 p=26963 u=train |  dev1                       : ok=4    changed=0    unreachable=0    failed=0   
+2017-06-13 16:17:14,322 p=26963 u=train |  dev2                       : ok=4    changed=0    unreachable=0    failed=0   
+2017-06-13 16:17:14,323 p=26963 u=train |  dev3                       : ok=4    changed=0    unreachable=0    failed=0   
+2017-06-13 16:17:14,323 p=26963 u=train |  qa1                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 16:17:14,323 p=26963 u=train |  qa2                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 16:17:14,323 p=26963 u=train |  qa3                        : ok=5    changed=0    unreachable=0    failed=0   
+2017-06-13 16:18:46,158 p=28374 u=train |  PLAY [Demonstrate installation of nginx] ***************************************
+2017-06-13 16:18:46,227 p=28374 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:19:10,525 p=28374 u=train |  ok: [dev1]
+2017-06-13 16:19:11,514 p=28374 u=train |  ok: [qa2]
+2017-06-13 16:19:11,552 p=28374 u=train |  ok: [dev2]
+2017-06-13 16:19:11,871 p=28374 u=train |  ok: [qa1]
+2017-06-13 16:19:11,969 p=28374 u=train |  ok: [qa3]
+2017-06-13 16:19:33,374 p=28374 u=train |  ok: [dev3]
+2017-06-13 16:19:33,386 p=28374 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 16:19:34,041 p=28374 u=train |  skipping: [dev1]
+2017-06-13 16:19:34,176 p=28374 u=train |  skipping: [dev2]
+2017-06-13 16:19:34,183 p=28374 u=train |  skipping: [dev3]
+2017-06-13 16:20:57,313 p=28374 u=train |  ok: [qa3]
+2017-06-13 16:20:58,375 p=28374 u=train |  ok: [qa1]
+2017-06-13 16:20:58,419 p=28374 u=train |  ok: [qa2]
+2017-06-13 16:20:58,435 p=28374 u=train |  TASK [Instal nginx web server on Centos] ***************************************
+2017-06-13 16:20:58,919 p=28374 u=train |  skipping: [dev1]
+2017-06-13 16:20:59,065 p=28374 u=train |  skipping: [dev2]
+2017-06-13 16:20:59,336 p=28374 u=train |  skipping: [dev3]
+2017-06-13 16:22:22,560 p=28374 u=train |  ok: [qa1]
+2017-06-13 16:22:23,291 p=28374 u=train |  ok: [qa2]
+2017-06-13 16:22:23,361 p=28374 u=train |  ok: [qa3]
+2017-06-13 16:22:23,363 p=28374 u=train |  TASK [Instal nginx web server on Ubuntu] ***************************************
+2017-06-13 16:22:23,761 p=28374 u=train |  skipping: [qa2]
+2017-06-13 16:22:23,845 p=28374 u=train |  skipping: [qa3]
+2017-06-13 16:22:23,963 p=28374 u=train |  skipping: [qa1]
+2017-06-13 16:23:08,976 p=28374 u=train |  ok: [dev3]
+2017-06-13 16:23:10,705 p=28374 u=train |  ok: [dev2]
+2017-06-13 16:23:11,347 p=28374 u=train |  ok: [dev1]
+2017-06-13 16:23:11,354 p=28374 u=train |  TASK [configure nginx on Centos] ***********************************************
+2017-06-13 16:23:11,728 p=28374 u=train |  skipping: [dev1]
+2017-06-13 16:23:11,750 p=28374 u=train |  skipping: [dev2]
+2017-06-13 16:23:11,962 p=28374 u=train |  skipping: [dev3]
+2017-06-13 16:23:13,861 p=28374 u=train |  ok: [qa2]
+2017-06-13 16:23:13,992 p=28374 u=train |  ok: [qa1]
+2017-06-13 16:23:14,010 p=28374 u=train |  ok: [qa3]
+2017-06-13 16:23:14,013 p=28374 u=train |  TASK [configure nginx on Ubuntu] ***********************************************
+2017-06-13 16:23:14,389 p=28374 u=train |  skipping: [qa2]
+2017-06-13 16:23:14,424 p=28374 u=train |  skipping: [qa3]
+2017-06-13 16:23:14,434 p=28374 u=train |  skipping: [qa1]
+2017-06-13 16:23:16,391 p=28374 u=train |  changed: [dev3]
+2017-06-13 16:23:16,540 p=28374 u=train |  changed: [dev2]
+2017-06-13 16:23:16,550 p=28374 u=train |  changed: [dev1]
+2017-06-13 16:23:16,557 p=28374 u=train |  TASK [Deploy website on nginx] *************************************************
+2017-06-13 16:23:19,207 p=28374 u=train |  changed: [qa1]
+2017-06-13 16:23:19,386 p=28374 u=train |  changed: [qa2]
+2017-06-13 16:23:19,670 p=28374 u=train |  changed: [dev1]
+2017-06-13 16:23:19,719 p=28374 u=train |  changed: [dev2]
+2017-06-13 16:23:20,117 p=28374 u=train |  changed: [qa3]
+2017-06-13 16:23:20,488 p=28374 u=train |  changed: [dev3]
+2017-06-13 16:23:20,489 p=28374 u=train |  RUNNING HANDLER [Restart nginx web server] *************************************
+2017-06-13 16:23:23,335 p=28374 u=train |  changed: [qa2]
+2017-06-13 16:23:23,381 p=28374 u=train |  changed: [qa1]
+2017-06-13 16:23:23,481 p=28374 u=train |  changed: [dev2]
+2017-06-13 16:23:23,989 p=28374 u=train |  changed: [dev3]
+2017-06-13 16:23:24,068 p=28374 u=train |  changed: [dev1]
+2017-06-13 16:23:24,321 p=28374 u=train |  changed: [qa3]
+2017-06-13 16:23:24,327 p=28374 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:23:24,329 p=28374 u=train |  dev1                       : ok=5    changed=3    unreachable=0    failed=0   
+2017-06-13 16:23:24,331 p=28374 u=train |  dev2                       : ok=5    changed=3    unreachable=0    failed=0   
+2017-06-13 16:23:24,331 p=28374 u=train |  dev3                       : ok=5    changed=3    unreachable=0    failed=0   
+2017-06-13 16:23:24,332 p=28374 u=train |  qa1                        : ok=6    changed=2    unreachable=0    failed=0   
+2017-06-13 16:23:24,343 p=28374 u=train |  qa2                        : ok=6    changed=2    unreachable=0    failed=0   
+2017-06-13 16:23:24,344 p=28374 u=train |  qa3                        : ok=6    changed=2    unreachable=0    failed=0   
+2017-06-13 16:40:40,566 p=30397 u=train |  ERROR! 'hsots' is not a valid attribute for a Play
+
+The error appears to have been in '/home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Demo of with_item
+  ^ here
+
+2017-06-13 16:41:04,372 p=30410 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:41:04,446 p=30410 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:41:26,505 p=30410 u=train |  ok: [dev1]
+2017-06-13 16:41:26,508 p=30410 u=train |  TASK [Let us use with_item in this task] ***************************************
+2017-06-13 16:41:26,737 p=30410 u=train |  ok: [dev1] => (item={u'mobile': u'822-387-9668', u'name': u'Dheeraj'}) => {
+    "item": {
+        "mobile": "822-387-9668", 
+        "name": "Dheeraj"
+    }, 
+    "msg": "Hello world!"
+}
+2017-06-13 16:41:26,758 p=30410 u=train |  ok: [dev1] => (item={u'mobile': u'744-743-5271', u'name': u'Manish'}) => {
+    "item": {
+        "mobile": "744-743-5271", 
+        "name": "Manish"
+    }, 
+    "msg": "Hello world!"
+}
+2017-06-13 16:41:26,760 p=30410 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:41:26,761 p=30410 u=train |  dev1                       : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 16:43:52,933 p=30482 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:43:52,978 p=30482 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:44:14,707 p=30482 u=train |  ok: [dev1]
+2017-06-13 16:44:14,711 p=30482 u=train |  TASK [Let us use with_item in this task] ***************************************
+2017-06-13 16:44:14,845 p=30482 u=train |  ok: [dev1] => (item={u'mobile': u'744-743-5271', u'name': u'Manish'}) => {
+    "item": {
+        "mobile": "744-743-5271", 
+        "name": "Manish"
+    }, 
+    "msg": "Mobile number of Manish is 744-743-5271."
+}
+2017-06-13 16:44:14,848 p=30482 u=train |  ok: [dev1] => (item={u'mobile': u'822-387-9668', u'name': u'Dheeraj'}) => {
+    "item": {
+        "mobile": "822-387-9668", 
+        "name": "Dheeraj"
+    }, 
+    "msg": "Mobile number of Dheeraj is 822-387-9668."
+}
+2017-06-13 16:44:14,851 p=30482 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:44:14,852 p=30482 u=train |  dev1                       : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 16:47:45,155 p=30556 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(with_items). Using last defined value only.
+
+2017-06-13 16:47:45,436 p=30556 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:47:45,526 p=30556 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:48:07,471 p=30556 u=train |  ok: [dev1]
+2017-06-13 16:48:07,479 p=30556 u=train |  TASK [Let us use with_item in this task] ***************************************
+2017-06-13 16:48:07,538 p=30556 u=train |  fatal: [dev1]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'int object' has no attribute 'name'\n\nThe error appears to have been in '/home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Let us use with_item in this task\n      ^ here\n"}
+2017-06-13 16:48:07,543 p=30556 u=train |  	to retry, use: --limit @/home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.retry
+
+2017-06-13 16:48:07,543 p=30556 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:48:07,543 p=30556 u=train |  dev1                       : ok=1    changed=0    unreachable=0    failed=1   
+2017-06-13 16:49:11,618 p=30625 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(name). Using last defined value only.
+
+2017-06-13 16:49:11,618 p=30625 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(debug). Using last defined value only.
+
+2017-06-13 16:49:11,619 p=30625 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(with_items). Using last defined value only.
+
+2017-06-13 16:49:11,621 p=30625 u=train |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml': line 14, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      name: Iterate the with_item
+      debug: {{item}}
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-06-13 16:49:44,006 p=30630 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(name). Using last defined value only.
+
+2017-06-13 16:49:44,007 p=30630 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(debug). Using last defined value only.
+
+2017-06-13 16:49:44,008 p=30630 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(with_items). Using last defined value only.
+
+2017-06-13 16:49:44,010 p=30630 u=train |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml': line 14, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      name: Iterate the with_item
+      debug: {{item}}
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-06-13 16:50:49,046 p=30637 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(name). Using last defined value only.
+
+2017-06-13 16:50:49,047 p=30637 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(debug). Using last defined value only.
+
+2017-06-13 16:50:49,048 p=30637 u=train |   [WARNING]: While constructing a mapping from /home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml, line 7, column 7, found a duplicate dict key
+(with_items). Using last defined value only.
+
+2017-06-13 16:50:49,378 p=30637 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:50:49,434 p=30637 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:51:11,504 p=30637 u=train |  ok: [dev1]
+2017-06-13 16:51:11,507 p=30637 u=train |  TASK [Iterate the with_item] ***************************************************
+2017-06-13 16:51:11,663 p=30637 u=train |  ok: [dev1] => (item=200) => {
+    "item": 200, 
+    "msg": 200
+}
+2017-06-13 16:51:11,668 p=30637 u=train |  ok: [dev1] => (item=100) => {
+    "item": 100, 
+    "msg": 100
+}
+2017-06-13 16:51:11,673 p=30637 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:51:11,673 p=30637 u=train |  dev1                       : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 16:52:08,897 p=30707 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:52:08,980 p=30707 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:52:10,838 p=30707 u=train |  ok: [dev1]
+2017-06-13 16:52:10,861 p=30707 u=train |  TASK [Let us use with_item in this task] ***************************************
+2017-06-13 16:52:11,037 p=30707 u=train |  ok: [dev1] => (item={u'mobile': u'822-387-9668', u'name': u'Dheeraj'}) => {
+    "item": {
+        "mobile": "822-387-9668", 
+        "name": "Dheeraj"
+    }, 
+    "msg": "Mobile number of Dheeraj is 822-387-9668."
+}
+2017-06-13 16:52:11,045 p=30707 u=train |  ok: [dev1] => (item={u'mobile': u'744-743-5271', u'name': u'Manish'}) => {
+    "item": {
+        "mobile": "744-743-5271", 
+        "name": "Manish"
+    }, 
+    "msg": "Mobile number of Manish is 744-743-5271."
+}
+2017-06-13 16:52:11,047 p=30707 u=train |  TASK [Iterate the with_item] ***************************************************
+2017-06-13 16:52:11,088 p=30707 u=train |  ok: [dev1] => (item=200) => {
+    "item": 200, 
+    "msg": 200
+}
+2017-06-13 16:52:11,092 p=30707 u=train |  ok: [dev1] => (item=100) => {
+    "item": 100, 
+    "msg": 100
+}
+2017-06-13 16:52:11,094 p=30707 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:52:11,095 p=30707 u=train |  dev1                       : ok=3    changed=0    unreachable=0    failed=0   
+2017-06-13 16:52:39,738 p=30763 u=train |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/train/JuneAnsible/Day2/InstallNginxOnCentos/withitem.yml': line 14, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: Iterate the with_item
+      debug: {{item}}
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-06-13 16:53:11,193 p=30768 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:53:11,281 p=30768 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:53:33,242 p=30768 u=train |  ok: [dev1]
+2017-06-13 16:53:33,244 p=30768 u=train |  TASK [Let us use with_item in this task] ***************************************
+2017-06-13 16:53:33,412 p=30768 u=train |  ok: [dev1] => (item={u'mobile': u'744-743-5271', u'name': u'Manish'}) => {
+    "item": {
+        "mobile": "744-743-5271", 
+        "name": "Manish"
+    }, 
+    "msg": "Mobile number of Manish is 744-743-5271."
+}
+2017-06-13 16:53:33,415 p=30768 u=train |  ok: [dev1] => (item={u'mobile': u'822-387-9668', u'name': u'Dheeraj'}) => {
+    "item": {
+        "mobile": "822-387-9668", 
+        "name": "Dheeraj"
+    }, 
+    "msg": "Mobile number of Dheeraj is 822-387-9668."
+}
+2017-06-13 16:53:33,417 p=30768 u=train |  TASK [Iterate the with_item] ***************************************************
+2017-06-13 16:53:33,570 p=30768 u=train |  ok: [dev1] => (item=200) => {
+    "item": 200, 
+    "msg": "Hello world!"
+}
+2017-06-13 16:53:33,572 p=30768 u=train |  ok: [dev1] => (item=100) => {
+    "item": 100, 
+    "msg": "Hello world!"
+}
+2017-06-13 16:53:33,578 p=30768 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:53:33,578 p=30768 u=train |  dev1                       : ok=3    changed=0    unreachable=0    failed=0   
+2017-06-13 16:54:16,703 p=30838 u=train |  PLAY [Demo of with_item] *******************************************************
+2017-06-13 16:54:16,813 p=30838 u=train |  TASK [setup] *******************************************************************
+2017-06-13 16:54:18,535 p=30838 u=train |  ok: [dev1]
+2017-06-13 16:54:18,550 p=30838 u=train |  TASK [Let us use with_item in this task] ***************************************
+2017-06-13 16:54:18,740 p=30838 u=train |  ok: [dev1] => (item={u'mobile': u'744-743-5271', u'name': u'Manish'}) => {
+    "item": {
+        "mobile": "744-743-5271", 
+        "name": "Manish"
+    }, 
+    "msg": "Mobile number of Manish is 744-743-5271."
+}
+2017-06-13 16:54:18,742 p=30838 u=train |  ok: [dev1] => (item={u'mobile': u'822-387-9668', u'name': u'Dheeraj'}) => {
+    "item": {
+        "mobile": "822-387-9668", 
+        "name": "Dheeraj"
+    }, 
+    "msg": "Mobile number of Dheeraj is 822-387-9668."
+}
+2017-06-13 16:54:18,745 p=30838 u=train |  TASK [Iterate the with_item] ***************************************************
+2017-06-13 16:54:18,837 p=30838 u=train |  ok: [dev1] => (item=200) => {
+    "item": 200, 
+    "msg": 200
+}
+2017-06-13 16:54:18,842 p=30838 u=train |  ok: [dev1] => (item=100) => {
+    "item": 100, 
+    "msg": 100
+}
+2017-06-13 16:54:18,860 p=30838 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 16:54:18,861 p=30838 u=train |  dev1                       : ok=3    changed=0    unreachable=0    failed=0   
+2017-06-13 17:04:57,238 p=30914 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:04:57,321 p=30914 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:05:06,676 p=30914 u=train |  ok: [localhost]
+2017-06-13 17:05:06,694 p=30914 u=train |  TASK [Print dictionary values] *************************************************
+2017-06-13 17:05:06,908 p=30914 u=train |  ok: [localhost] => (item={'key': u'Manish', 'value': {u'mobile': u'744-743-5215', u'name': u'Manish'}}) => {
+    "item": {
+        "key": "Manish", 
+        "value": {
+            "mobile": "744-743-5215", 
+            "name": "Manish"
+        }
+    }, 
+    "msg": "Manish Name is Manish and mobile is 744-743-5215"
+}
+2017-06-13 17:05:06,968 p=30914 u=train |  ok: [localhost] => (item={'key': u'Dheeraj', 'value': {u'mobile': u'822-387-9668', u'name': u'Dheeraj'}}) => {
+    "item": {
+        "key": "Dheeraj", 
+        "value": {
+            "mobile": "822-387-9668", 
+            "name": "Dheeraj"
+        }
+    }, 
+    "msg": "Dheeraj Name is Dheeraj and mobile is 822-387-9668"
+}
+2017-06-13 17:05:06,970 p=30914 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:05:06,970 p=30914 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:05:57,001 p=31392 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:05:57,039 p=31392 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:06:03,280 p=31392 u=train |  ok: [localhost]
+2017-06-13 17:06:03,317 p=31392 u=train |  TASK [Print dictionary values] *************************************************
+2017-06-13 17:06:03,577 p=31392 u=train |  ok: [localhost] => (item={'key': u'Manish', 'value': {u'mobile': u'744-743-5215', u'name': u'Manish'}}) => {
+    "item": {
+        "key": "Manish", 
+        "value": {
+            "mobile": "744-743-5215", 
+            "name": "Manish"
+        }
+    }, 
+    "msg": "Manish Name is Manish and mobile is 744-743-5215."
+}
+2017-06-13 17:06:03,627 p=31392 u=train |  ok: [localhost] => (item={'key': u'Dheeraj', 'value': {u'mobile': u'822-387-9668', u'name': u'Dheeraj'}}) => {
+    "item": {
+        "key": "Dheeraj", 
+        "value": {
+            "mobile": "822-387-9668", 
+            "name": "Dheeraj"
+        }
+    }, 
+    "msg": "Dheeraj Name is Dheeraj and mobile is 822-387-9668."
+}
+2017-06-13 17:06:03,634 p=31392 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:06:03,634 p=31392 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:25:54,885 p=31893 u=train |  ERROR! the playbook: wihtsequence.yml could not be found
+2017-06-13 17:26:09,644 p=31897 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:26:09,796 p=31897 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:26:14,891 p=31897 u=train |  ok: [localhost]
+2017-06-13 17:26:14,904 p=31897 u=train |  TASK [debug] *******************************************************************
+2017-06-13 17:26:15,188 p=31897 u=train |  ok: [localhost] => (item=10) => {
+    "item": "10", 
+    "msg": "10"
+}
+2017-06-13 17:26:15,191 p=31897 u=train |  ok: [localhost] => (item=0f) => {
+    "item": "0f", 
+    "msg": "0f"
+}
+2017-06-13 17:26:15,194 p=31897 u=train |  ok: [localhost] => (item=0e) => {
+    "item": "0e", 
+    "msg": "0e"
+}
+2017-06-13 17:26:15,212 p=31897 u=train |  ok: [localhost] => (item=0d) => {
+    "item": "0d", 
+    "msg": "0d"
+}
+2017-06-13 17:26:15,215 p=31897 u=train |  ok: [localhost] => (item=0c) => {
+    "item": "0c", 
+    "msg": "0c"
+}
+2017-06-13 17:26:15,219 p=31897 u=train |  ok: [localhost] => (item=0b) => {
+    "item": "0b", 
+    "msg": "0b"
+}
+2017-06-13 17:26:15,235 p=31897 u=train |  ok: [localhost] => (item=0a) => {
+    "item": "0a", 
+    "msg": "0a"
+}
+2017-06-13 17:26:15,239 p=31897 u=train |  ok: [localhost] => (item=09) => {
+    "item": "09", 
+    "msg": "09"
+}
+2017-06-13 17:26:15,247 p=31897 u=train |  ok: [localhost] => (item=08) => {
+    "item": "08", 
+    "msg": "08"
+}
+2017-06-13 17:26:15,250 p=31897 u=train |  ok: [localhost] => (item=07) => {
+    "item": "07", 
+    "msg": "07"
+}
+2017-06-13 17:26:15,271 p=31897 u=train |  ok: [localhost] => (item=06) => {
+    "item": "06", 
+    "msg": "06"
+}
+2017-06-13 17:26:15,297 p=31897 u=train |  ok: [localhost] => (item=05) => {
+    "item": "05", 
+    "msg": "05"
+}
+2017-06-13 17:26:15,310 p=31897 u=train |  ok: [localhost] => (item=04) => {
+    "item": "04", 
+    "msg": "04"
+}
+2017-06-13 17:26:15,323 p=31897 u=train |  ok: [localhost] => (item=03) => {
+    "item": "03", 
+    "msg": "03"
+}
+2017-06-13 17:26:15,327 p=31897 u=train |  ok: [localhost] => (item=02) => {
+    "item": "02", 
+    "msg": "02"
+}
+2017-06-13 17:26:15,330 p=31897 u=train |  ok: [localhost] => (item=01) => {
+    "item": "01", 
+    "msg": "01"
+}
+2017-06-13 17:26:15,342 p=31897 u=train |  ok: [localhost] => (item=00) => {
+    "item": "00", 
+    "msg": "00"
+}
+2017-06-13 17:26:15,349 p=31897 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:26:15,349 p=31897 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:27:04,361 p=32362 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:27:04,397 p=32362 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:27:09,992 p=32362 u=train |  ok: [localhost]
+2017-06-13 17:27:10,000 p=32362 u=train |  TASK [debug] *******************************************************************
+2017-06-13 17:27:10,128 p=32362 u=train |  ok: [localhost] => (item=2) => {
+    "item": "2", 
+    "msg": "2"
+}
+2017-06-13 17:27:10,145 p=32362 u=train |  ok: [localhost] => (item=3) => {
+    "item": "3", 
+    "msg": "3"
+}
+2017-06-13 17:27:10,181 p=32362 u=train |  ok: [localhost] => (item=1) => {
+    "item": "1", 
+    "msg": "1"
+}
+2017-06-13 17:27:10,207 p=32362 u=train |  ok: [localhost] => (item=5) => {
+    "item": "5", 
+    "msg": "5"
+}
+2017-06-13 17:27:10,225 p=32362 u=train |  ok: [localhost] => (item=4) => {
+    "item": "4", 
+    "msg": "4"
+}
+2017-06-13 17:27:10,245 p=32362 u=train |  ok: [localhost] => (item=6) => {
+    "item": "6", 
+    "msg": "6"
+}
+2017-06-13 17:27:10,273 p=32362 u=train |  ok: [localhost] => (item=0) => {
+    "item": "0", 
+    "msg": "0"
+}
+2017-06-13 17:27:10,321 p=32362 u=train |  ok: [localhost] => (item=7) => {
+    "item": "7", 
+    "msg": "7"
+}
+2017-06-13 17:27:10,349 p=32362 u=train |  ok: [localhost] => (item=9) => {
+    "item": "9", 
+    "msg": "9"
+}
+2017-06-13 17:27:10,372 p=32362 u=train |  ok: [localhost] => (item=10) => {
+    "item": "10", 
+    "msg": "10"
+}
+2017-06-13 17:27:10,375 p=32362 u=train |  ok: [localhost] => (item=8) => {
+    "item": "8", 
+    "msg": "8"
+}
+2017-06-13 17:27:10,399 p=32362 u=train |  ok: [localhost] => (item=12) => {
+    "item": "12", 
+    "msg": "12"
+}
+2017-06-13 17:27:10,401 p=32362 u=train |  ok: [localhost] => (item=11) => {
+    "item": "11", 
+    "msg": "11"
+}
+2017-06-13 17:27:10,430 p=32362 u=train |  ok: [localhost] => (item=13) => {
+    "item": "13", 
+    "msg": "13"
+}
+2017-06-13 17:27:10,473 p=32362 u=train |  ok: [localhost] => (item=14) => {
+    "item": "14", 
+    "msg": "14"
+}
+2017-06-13 17:27:10,516 p=32362 u=train |  ok: [localhost] => (item=15) => {
+    "item": "15", 
+    "msg": "15"
+}
+2017-06-13 17:27:10,538 p=32362 u=train |  ok: [localhost] => (item=16) => {
+    "item": "16", 
+    "msg": "16"
+}
+2017-06-13 17:27:10,540 p=32362 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:27:10,540 p=32362 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:32:35,101 p=429 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:32:35,146 p=429 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:32:40,245 p=429 u=train |  ok: [localhost]
+2017-06-13 17:32:40,259 p=429 u=train |  TASK [debug] *******************************************************************
+2017-06-13 17:32:40,434 p=429 u=train |  ok: [localhost] => (item=6) => {
+    "item": "6", 
+    "msg": "6"
+}
+2017-06-13 17:32:40,457 p=429 u=train |  ok: [localhost] => (item=3) => {
+    "item": "3", 
+    "msg": "3"
+}
+2017-06-13 17:32:40,488 p=429 u=train |  ok: [localhost] => (item=0) => {
+    "item": "0", 
+    "msg": "0"
+}
+2017-06-13 17:32:40,507 p=429 u=train |  ok: [localhost] => (item=15) => {
+    "item": "15", 
+    "msg": "15"
+}
+2017-06-13 17:32:40,511 p=429 u=train |  ok: [localhost] => (item=12) => {
+    "item": "12", 
+    "msg": "12"
+}
+2017-06-13 17:32:40,514 p=429 u=train |  ok: [localhost] => (item=9) => {
+    "item": "9", 
+    "msg": "9"
+}
+2017-06-13 17:32:40,516 p=429 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:32:40,517 p=429 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:40:02,880 p=914 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:40:02,924 p=914 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:40:08,156 p=914 u=train |  ok: [localhost]
+2017-06-13 17:40:08,160 p=914 u=train |  TASK [debug] *******************************************************************
+2017-06-13 17:40:08,466 p=914 u=train |  ok: [localhost] => (item=[u'a', 3]) => {
+    "item": [
+        "a", 
+        3
+    ], 
+    "msg": "a 3."
+}
+2017-06-13 17:40:08,493 p=914 u=train |  ok: [localhost] => (item=[u'a', 4]) => {
+    "item": [
+        "a", 
+        4
+    ], 
+    "msg": "a 4."
+}
+2017-06-13 17:40:08,516 p=914 u=train |  ok: [localhost] => (item=[u'b', 2]) => {
+    "item": [
+        "b", 
+        2
+    ], 
+    "msg": "b 2."
+}
+2017-06-13 17:40:08,589 p=914 u=train |  ok: [localhost] => (item=[u'b', 1]) => {
+    "item": [
+        "b", 
+        1
+    ], 
+    "msg": "b 1."
+}
+2017-06-13 17:40:08,596 p=914 u=train |  ok: [localhost] => (item=[u'c', 5]) => {
+    "item": [
+        "c", 
+        5
+    ], 
+    "msg": "c 5."
+}
+2017-06-13 17:40:08,609 p=914 u=train |  ok: [localhost] => (item=[u'c', 4]) => {
+    "item": [
+        "c", 
+        4
+    ], 
+    "msg": "c 4."
+}
+2017-06-13 17:40:08,615 p=914 u=train |  ok: [localhost] => (item=[u'c', 3]) => {
+    "item": [
+        "c", 
+        3
+    ], 
+    "msg": "c 3."
+}
+2017-06-13 17:40:08,618 p=914 u=train |  ok: [localhost] => (item=[u'c', 2]) => {
+    "item": [
+        "c", 
+        2
+    ], 
+    "msg": "c 2."
+}
+2017-06-13 17:40:08,635 p=914 u=train |  ok: [localhost] => (item=[u'c', 1]) => {
+    "item": [
+        "c", 
+        1
+    ], 
+    "msg": "c 1."
+}
+2017-06-13 17:40:08,638 p=914 u=train |  ok: [localhost] => (item=[u'b', 5]) => {
+    "item": [
+        "b", 
+        5
+    ], 
+    "msg": "b 5."
+}
+2017-06-13 17:40:08,641 p=914 u=train |  ok: [localhost] => (item=[u'b', 4]) => {
+    "item": [
+        "b", 
+        4
+    ], 
+    "msg": "b 4."
+}
+2017-06-13 17:40:08,661 p=914 u=train |  ok: [localhost] => (item=[u'b', 3]) => {
+    "item": [
+        "b", 
+        3
+    ], 
+    "msg": "b 3."
+}
+2017-06-13 17:40:08,672 p=914 u=train |  ok: [localhost] => (item=[u'a', 5]) => {
+    "item": [
+        "a", 
+        5
+    ], 
+    "msg": "a 5."
+}
+2017-06-13 17:40:08,696 p=914 u=train |  ok: [localhost] => (item=[u'a', 2]) => {
+    "item": [
+        "a", 
+        2
+    ], 
+    "msg": "a 2."
+}
+2017-06-13 17:40:08,717 p=914 u=train |  ok: [localhost] => (item=[u'a', 1]) => {
+    "item": [
+        "a", 
+        1
+    ], 
+    "msg": "a 1."
+}
+2017-06-13 17:40:08,729 p=914 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:40:08,730 p=914 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:40:29,527 p=1641 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:40:29,618 p=1641 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:40:34,933 p=1641 u=train |  ok: [localhost]
+2017-06-13 17:40:34,941 p=1641 u=train |  TASK [debug] *******************************************************************
+2017-06-13 17:40:35,139 p=1641 u=train |  ok: [localhost] => (item=[u'a', 1]) => {
+    "item": [
+        "a", 
+        1
+    ], 
+    "msg": "a 1."
+}
+2017-06-13 17:40:35,143 p=1641 u=train |  ok: [localhost] => (item=[u'b', 1]) => {
+    "item": [
+        "b", 
+        1
+    ], 
+    "msg": "b 1."
+}
+2017-06-13 17:40:35,147 p=1641 u=train |  ok: [localhost] => (item=[u'a', 5]) => {
+    "item": [
+        "a", 
+        5
+    ], 
+    "msg": "a 5."
+}
+2017-06-13 17:40:35,159 p=1641 u=train |  ok: [localhost] => (item=[u'a', 4]) => {
+    "item": [
+        "a", 
+        4
+    ], 
+    "msg": "a 4."
+}
+2017-06-13 17:40:35,162 p=1641 u=train |  ok: [localhost] => (item=[u'a', 3]) => {
+    "item": [
+        "a", 
+        3
+    ], 
+    "msg": "a 3."
+}
+2017-06-13 17:40:35,181 p=1641 u=train |  ok: [localhost] => (item=[u'b', 2]) => {
+    "item": [
+        "b", 
+        2
+    ], 
+    "msg": "b 2."
+}
+2017-06-13 17:40:35,185 p=1641 u=train |  ok: [localhost] => (item=[u'a', 2]) => {
+    "item": [
+        "a", 
+        2
+    ], 
+    "msg": "a 2."
+}
+2017-06-13 17:40:35,193 p=1641 u=train |  ok: [localhost] => (item=[u'b', 3]) => {
+    "item": [
+        "b", 
+        3
+    ], 
+    "msg": "b 3."
+}
+2017-06-13 17:40:35,272 p=1641 u=train |  ok: [localhost] => (item=[u'b', 4]) => {
+    "item": [
+        "b", 
+        4
+    ], 
+    "msg": "b 4."
+}
+2017-06-13 17:40:35,302 p=1641 u=train |  ok: [localhost] => (item=[u'b', 5]) => {
+    "item": [
+        "b", 
+        5
+    ], 
+    "msg": "b 5."
+}
+2017-06-13 17:40:35,308 p=1641 u=train |  ok: [localhost] => (item=[u'c', 2]) => {
+    "item": [
+        "c", 
+        2
+    ], 
+    "msg": "c 2."
+}
+2017-06-13 17:40:35,326 p=1641 u=train |  ok: [localhost] => (item=[u'c', 1]) => {
+    "item": [
+        "c", 
+        1
+    ], 
+    "msg": "c 1."
+}
+2017-06-13 17:40:35,330 p=1641 u=train |  ok: [localhost] => (item=[u'c', 3]) => {
+    "item": [
+        "c", 
+        3
+    ], 
+    "msg": "c 3."
+}
+2017-06-13 17:40:35,373 p=1641 u=train |  ok: [localhost] => (item=[u'c', 4]) => {
+    "item": [
+        "c", 
+        4
+    ], 
+    "msg": "c 4."
+}
+2017-06-13 17:40:35,410 p=1641 u=train |  ok: [localhost] => (item=[u'c', 5]) => {
+    "item": [
+        "c", 
+        5
+    ], 
+    "msg": "c 5."
+}
+2017-06-13 17:40:35,426 p=1641 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:40:35,426 p=1641 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-06-13 17:43:08,458 p=2264 u=train |  PLAY [localhost] ***************************************************************
+2017-06-13 17:43:08,494 p=2264 u=train |  TASK [setup] *******************************************************************
+2017-06-13 17:43:14,764 p=2264 u=train |  ok: [localhost]
+2017-06-13 17:43:14,785 p=2264 u=train |  TASK [debug] *******************************************************************
+2017-06-13 17:43:14,935 p=2264 u=train |  ok: [localhost] => (item=[u'b', 4]) => {
+    "item": [
+        "b", 
+        4
+    ], 
+    "msg": "b 4."
+}
+2017-06-13 17:43:14,942 p=2264 u=train |  ok: [localhost] => (item=[u'c', 5]) => {
+    "item": [
+        "c", 
+        5
+    ], 
+    "msg": "c 5."
+}
+2017-06-13 17:43:14,953 p=2264 u=train |  ok: [localhost] => (item=[u'a', 3]) => {
+    "item": [
+        "a", 
+        3
+    ], 
+    "msg": "a 3."
+}
+2017-06-13 17:43:14,961 p=2264 u=train |  PLAY RECAP *********************************************************************
+2017-06-13 17:43:14,981 p=2264 u=train |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
