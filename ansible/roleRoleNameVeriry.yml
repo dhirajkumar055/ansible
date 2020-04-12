@@ -1,0 +1,10 @@
+---
+- name: Use Role roleName
+  hosts: localhost
+  roles:
+    - { role: roleName, suffix: "{{file}}" }
+
+- name: Verify url
+  hosts: localhost
+  roles:
+  - { role: verifyURL }

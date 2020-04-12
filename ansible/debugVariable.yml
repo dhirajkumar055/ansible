@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  vars:
+    Name: "Dheeraj Chopra"
+    Company: "Paytm"
+  tasks:
+  - name: Details
+    shell: echo "{{Name}} from {{Company}}"
+    register: variable
+
+  - debug:
+     msg: "{{variable}}"

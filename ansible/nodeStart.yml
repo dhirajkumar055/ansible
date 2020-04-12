@@ -1,0 +1,6 @@
+---
+
+- hosts: all
+  tasks:
+    - name: Start node
+      shell: forever start /path/to/node.js

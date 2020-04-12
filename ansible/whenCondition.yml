@@ -1,0 +1,28 @@
+---
+
+- hosts: all 
+  tasks:
+    - name: 7 > 5
+      shell: echo "Yes"
+      when: 7 > 5
+
+- hosts: all
+  tasks:
+   - name: When
+     shell: echo "Tags"
+     register: result
+     when:
+     - tag == "tag"
+
+   - debug: msg="{{result}}"
+
+
+#when: webservers in group_names
+#when: ansible_os_family == "Debian"
+#when: ansible_pkg_mgr == "apt"
+#when: myvariablename is defined
+#Boolean: when: result|failed
+#Multiple Conditions: when: condition1 and/or condition2
+
+#Regex
+#when: inventory_hostname is regex("prod*")

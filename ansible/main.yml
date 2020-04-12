@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - include: includeFile.yml
+      tags:
+       - t1
+
+    - debug: msg="Inside main file"
+      tags:
+        - t2

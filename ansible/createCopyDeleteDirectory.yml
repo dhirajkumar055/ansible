@@ -1,0 +1,29 @@
+- hosts: localhost
+#  become_method: sudo
+#  become: true
+  tasks:
+  - name: Make Directory
+    file:
+      path: /home/dheerajkumar/create/if/not/present
+      state: directory
+      mode: '0755'
+
+  - name: Copy File
+    copy:
+      src: /home/dheerajkumar/Desktop/Dheeraj/ansible/hosts
+      dest: /home/dheerajkumar/create
+      mode: 0777
+      owner: dheeraj
+      group: dheeraj
+    become: True
+    become_method: sudo
+
+  - name: Delete Directory
+    file:
+      path: /home/dheerajkumar/create
+#      state: absent
+
+  - name: Create a file
+    file:
+      path: /home/dheerajkumar/homefile
+      state: touch     

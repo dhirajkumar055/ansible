@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks:
+  - name: Using Blocks
+    block:
+      - debug: msg="This is first task"
+      -  name: Sub-task
+         shell: /bin/false #this will fail and rescue will be executed
+         #register: a
+      #-  debug: msg="{{a}}"
+      - debug: msg="{{ item}}"
+        with_items:
+        - a
+    
+    always:
+      - debug: msg="This will always execute"
+      
+    rescue:
+      - debug: msg="This will be executed if block has any error"
