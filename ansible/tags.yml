@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  tasks:
+  - name: abc
+    apt:
+      pkg:
+        - lighttpd
+      state: present
+    tags:
+    - packages
+  
+  - name: Echo1
+    shell: echo "Echo1"
+
+  - name: Echo2
+    shell: echo "Echo2"
+    tags:
+    - Echo2

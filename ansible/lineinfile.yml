@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  tasks:
+  - name: "line in file"
+    lineinfile:
+      path: /tmp/my.conf
+      regexp: '(.*)456(.*)'
+      state: absent 
+    register: conf
+    check_mode: yes
+#    register: conf
+#    failed_when: (conf is changed) or (conf is failed)
+
+  - debug: msg="{{conf}}"

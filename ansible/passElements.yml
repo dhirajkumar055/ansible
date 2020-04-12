@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+   - name: Download Jar
+     shell: cd /tmp/; wget https://pkg.jenkins.io/redhat-stable/jenkins-{{ BUILD_NUMBER }}.noarch.rpm -O jenkins.jar
+
+

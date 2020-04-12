@@ -1,0 +1,21 @@
+#passElements 
+ansible-playbook -i hosts -e BUILD_NUMBER="2.121.2-1.1" passElements.yml
+
+#Run Jenkins remotely
+curl -X POST -u YOUR_USER:YOUR_USER_PASSWORD http://YOUR_JENKINS_URL/job/YOUR_JOB/build
+
+#roleRoleName.yml :Create a file /tmp/abcabc
+ansible-playbook roleRoleName.yml -e file="abc"
+
+#createCopyDeleteDirectory.yml
+ansible-playbook createCopyDeleteDirectory.yml
+
+#tags.yml
+ansible-playbook tags.yml --tags="Echo1"
+ansible-playbook tags.yml --tags="Echo2"
+ansible-playbook tags.yml --tags="packages"
+ansible-playbook tags.yml --tags="Echo1,Echo2"
+ansible-playbook tags.yml --list-tags
+
+#Comment in j2 file
+{# ...... #}

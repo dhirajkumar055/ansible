@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  vars:
+    var1: "File created using j2 template"
+    var2: HelloWorld!!!
+  
+  tasks:
+    - name: Ansible Template
+      template:
+        src: Jinja2/hello_world.j2
+        dest: Output/hello_world.out
+      tags:
+      - helloworld
+
+    - name: For Loop
+      template:
+        src: Jinja2/forLoop.j2
+        dest: Output/forLoop.out
+      tags:
+      - forLoop

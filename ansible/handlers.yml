@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks: 
+    - name: Using handlers
+      shell: cd /home/dheerajkumar
+      notify: 
+        - pwd1
+
+  handlers:
+  -  name: "pwd1"
+     shell: pwd

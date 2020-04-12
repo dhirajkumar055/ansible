@@ -1,0 +1,8 @@
+- name: Verify URL
+  shell: curl -I https://www.google.com/ 2>/dev/null | grep HTTP | awk -F ' ' '{print $2}' | tr -s " "
+  register: curlOUT
+  until: curlOUT.stdout == "200"
+  retries: 60
+  delay: 5
+
+- debug: var=curlOUT.stdout_lines

@@ -1,0 +1,19 @@
+---
+- hosts: all
+  vars:
+    list1:
+     - l1
+     - l2
+     - l3
+
+  tasks:
+  - set_fact:
+     other_var: "other"
+
+  - name: Echo the list
+    shell: echo {{item}} {{other_var}}
+    with_items: "{{list1}}"
+    
+  - name: with array
+    shell: echo "{{item}}"
+    loop: [1, 2]

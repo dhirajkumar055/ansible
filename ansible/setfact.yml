@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: "Setting variables using set_fact"
+    set_fact:
+        name: "some value"
+        one_fact: " Yes"
+        two_fact: 'no'
+        cacheable: yes
+  - debug: msg="{{name}}{{one_fact*2}} {{two_fact}}"

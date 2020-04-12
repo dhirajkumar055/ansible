@@ -1,0 +1,25 @@
+---
+- hosts: all
+  tasks:
+  - name: "Download file"
+    get_url:
+      url: http://www.iconarchive.com/show/i-icons-by-treetog/Documents-icon.html
+      dest: /tmp/
+      #cksum: 2677335541
+      
+      
+#https://docs.ansible.com/ansible/latest/modules/get_url_module.html
+
+# Download file and force basic auth
+#force_basic_auth: yes
+
+# Download file with check (sha256)
+# checksum: sha256:0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c
+# checksum: md5:0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c
+
+#username: username
+#password: '{{ mysecret }}'
+
+#    headers:
+  #    key1: one
+    #  key2: two

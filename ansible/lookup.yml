@@ -1,0 +1,10 @@
+---
+- hosts: all
+  gather_facts: false
+  vars:
+    variable: "value"
+    date: "{{ lookup('pipe', 'date +%Y%m%d-%H%M') }}"
+  tasks:
+  - debug:  msg="{{date}}"
+  - debug: msg="{{variable}}"
+  - debug: var="{{lookup('pipe',  'date +%Y%m%d')}}"

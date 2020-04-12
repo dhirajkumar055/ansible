@@ -1,0 +1,14 @@
+---
+- hosts: all
+
+  gather_facts: no
+  tasks:
+  - name: "With Nested Example"
+    shell: echo "{{item[0]}}, {{item[1]}}, {{item[2]}}"
+    register: nestedExample
+    with_nested:
+    - ['first', 'second']
+    - ['one', 'two', 'three']
+    - ['a', 'b']
+
+  - debug: msg="{{nestedExample}}"
