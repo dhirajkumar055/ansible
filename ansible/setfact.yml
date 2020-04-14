@@ -8,4 +8,11 @@
         one_fact: " Yes"
         two_fact: 'no'
         cacheable: yes
-  - debug: msg="{{name}}{{one_fact*2}} {{two_fact}}"
+  - debug: msg="{{name}}{{one_fact*2}} {{ two_fact }} d"
+
+  - name: With when
+    set_fact:
+      type: "customVariable"
+    when: inventory_hostname == "127.0.0.1" or inventory_hostname == "localhost"
+
+  - debug: msg="{{type}}"
