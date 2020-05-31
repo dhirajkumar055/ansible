@@ -19,7 +19,7 @@
   - name: "Copy War to /pth/Downloads/Backup"
     copy:
       src: "{{ item.path }}"
-      dest: /paytm/path/Backup
+      dest: /path/Backup
       remote_src: yes
     with_items: "{{copyFiles.files}}"
     
