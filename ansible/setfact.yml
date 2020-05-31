@@ -12,7 +12,7 @@
 
   - name: With when
     set_fact:
-      type: "customVariable"
+      dynamicVariable: "customValue"
     when: inventory_hostname == "127.0.0.1" or inventory_hostname == "localhost"
 
   - debug: msg="{{type}}"

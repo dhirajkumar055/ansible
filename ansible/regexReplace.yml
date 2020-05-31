@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: "Change property file"
+    replace:
+           dest: /path/to/filename
+           regexp: 'abc.property=present'
+           replace: 'abc.property=replacedto'

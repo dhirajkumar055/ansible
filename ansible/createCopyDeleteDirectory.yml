@@ -7,7 +7,9 @@
       path: /home/dheerajkumar/create/if/not/present
       state: directory
       mode: '0755'
-
+      owner: dheeraj
+      group: dheeraj
+      recurse: yes #for changing permissions recursively
   - name: Copy File
     copy:
       src: /home/dheerajkumar/Desktop/Dheeraj/ansible/hosts
@@ -27,3 +29,7 @@
     file:
       path: /home/dheerajkumar/homefile
       state: touch     
+      ignore_errors: yes
+      
+      
+#Remote copy does not support recursive copy of directory:

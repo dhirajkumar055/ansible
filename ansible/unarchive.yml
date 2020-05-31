@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+  - name: Downloading and unarchiving the tar 
+    unarchive:
+      src: http://hostname/path/to/targzfile/file.tar.gz
+      dest: /destination/path
+      remote_src: yes
+      
+#unarchive
+#remote_src yes means Unarchive a file that is already on the remote machine
