@@ -1,0 +1,3 @@
+  until: curlOUT.stdout == "200"
+  retries: 60
+  delay: 5

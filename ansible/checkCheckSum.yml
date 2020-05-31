@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: false
+  tasks:
+  - name: Check Cksum
+    shell: cksum /path/to/file/filename
+    register: cksumout
+  - debug: msg="{{cksumout.stdout}}"

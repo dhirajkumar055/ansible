@@ -12,3 +12,8 @@
     - ['a', 'b']
 
   - debug: msg="{{nestedExample}}"
+  
+  #first one a
+  #first one b
+  #first two a
+  #first two b...
