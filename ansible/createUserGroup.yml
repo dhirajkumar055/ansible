@@ -1,0 +1,31 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Add Group
+    group:
+      name: "app"
+      state: present
+
+  - name: Add user
+    user:
+      name: "app"
+      groups: "app"
+
+  - name: Change permissions of logs 
+    file:
+      path: /dheeraj/logs
+      state: directory
+      mode: '0664'
+      owner: app
+      group: app
+      recurse: yes
+
+  - name: Change owner and group
+    file:
+      path: /dheeraj
+      state: directory
+      owner: app
+      group: app
+      recurse: yes
