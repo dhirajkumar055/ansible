@@ -14,7 +14,11 @@
   - debug: msg="{{conf}}"
 
 
+<<<<<<< HEAD
 #line is required with state=present
 
 #Arrays passed as arguments
 #--extra-vars {KeyToUpdate:[${KeysToUpdate}]}
+=======
+#line is required with state=present
+>>>>>>> 1b9ded649a99f6640ad8ebf9349da3fbfa5fb7c4

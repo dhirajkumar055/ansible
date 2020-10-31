@@ -30,17 +30,3 @@
     with_items: "{{ copyFiles.files }}"
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
