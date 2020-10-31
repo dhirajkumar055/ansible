@@ -12,3 +12,14 @@
 #delegate_to is used for source hostname.
 
 #https://docs.ansible.com/ansible/latest/modules/synchronize_module.html
+<<<<<<< HEAD
+
+#Passed keys with --extra-vars {KeyToUpdate:[${KeysToUpdate}]}
+    - name: Adding keys in property file
+      lineinfile:
+        path: "{{propertyfile}}"
+        line: "{{item}}"
+        state: present
+      with_items: "{{KeyToAdd}}"
+=======
+>>>>>>> 1b9ded649a99f6640ad8ebf9349da3fbfa5fb7c4

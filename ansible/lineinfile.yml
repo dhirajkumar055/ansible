@@ -13,5 +13,7 @@
 
   - debug: msg="{{conf}}"
 
-
 #line is required with state=present
+
+#Arrays passed as arguments
+#--extra-vars {KeyToUpdate:[${KeysToUpdate}]}
