@@ -8,3 +8,13 @@
   hosts: localhost
   roles:
   - { role: verifyURL }
+
+
+#ansible-galaxy init rolename --offline #Creates rolename and its directory structure
+#1. defaults : data about the role/application. Default variable.
+#2 files put static files here. we can copy these
+#3 handlers : tasks which are based on some action. triggers.
+#4 meta Info about roles, support platforms, dependencies
+#5. tasks: code logic or code. installing, coping, files etc
+#templates : similar to files except templates support dynamic files - jinja2 - template language
+#7. vars - higher priority then default and difficult to override

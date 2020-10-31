@@ -1,0 +1,46 @@
+  - name: "Check if war exists"
+    stat:
+     path: /path/to/acd{{version}}.war
+    register: fileCheck
+
+  - meta: end_play
+    when: fileCheck.stat.exists == True
+    
+    
+
+
+  - name: "Take Backup of previous war files"
+    find:
+      paths: /path/Downloads/
+      patterns: "jenkins.*war"
+      use_regex: true
+    register: copyFiles
+
+  - name: "Copy War to /pth/Downloads/Backup"
+    copy:
+      src: "{{ item.path }}"
+      dest: /path/Backup
+      remote_src: yes
+    with_items: "{{copyFiles.files}}"
+    
+  - name: "Delete War File"
+    file:
+      path: "{{ item.path }}"
+      state: absent
+    with_items: "{{ copyFiles.files }}"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

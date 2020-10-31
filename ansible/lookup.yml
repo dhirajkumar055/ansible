@@ -5,6 +5,15 @@
     variable: "value"
     date: "{{ lookup('pipe', 'date +%Y%m%d-%H%M') }}"
   tasks:
-  - debug:  msg="{{date}}"
+  - debug: msg="{{date}}"
   - debug: msg="{{variable}}"
   - debug: var="{{lookup('pipe',  'date +%Y%m%d')}}"
+  
+  
+  
+  
+10.143.15.43|pgp-bo-panel2
+10.143.21.44|boss-app3
+10.143.21.45|boss-app4
+10.143.21.46|boss-app5
+10.143.21.47|boss-app6

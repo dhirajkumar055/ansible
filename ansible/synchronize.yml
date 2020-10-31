@@ -1,0 +1,22 @@
+- hosts: all
+  tasks:
+  - name: Synchronize two directories on one remote host.
+    synchronize:
+      src: /source/path
+      dest: /destination/path
+    delegate_to: "{{ inventory_hostname }}"
+
+
+#synchronize: A wrapper around rsync
+#delegate_to: "{{ inventory_hostname }}"
+#delegate_to is used for source hostname.
+
+#https://docs.ansible.com/ansible/latest/modules/synchronize_module.html
+
+#Passed keys with --extra-vars {KeyToUpdate:[${KeysToUpdate}]}
+    - name: Adding keys in property file
+      lineinfile:
+        path: "{{propertyfile}}"
+        line: "{{item}}"
+        state: present
+      with_items: "{{KeyToAdd}}"

@@ -12,3 +12,9 @@
 #    failed_when: (conf is changed) or (conf is failed)
 
   - debug: msg="{{conf}}"
+
+
+#line is required with state=present
+
+#Arrays passed as arguments
+#--extra-vars {KeyToUpdate:[${KeysToUpdate}]}
