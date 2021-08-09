@@ -1,3 +1,10 @@
+Update line with regular expression
+- name: Update Cluster Name
+  lineinfile:
+    path: "{{ScyllaConfigFile}}" 
+    regex: '^#cluster_name:*|^cluster_name:'
+    line: 'cluster_name: {{ClusterName}}'
+
 How to use a public keypair .pem file for ansible playbooks?
 ssh-agent bash
 ssh-add ~/.ssh/keypair.pem
