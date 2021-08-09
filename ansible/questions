@@ -1,0 +1,3 @@
+How to use a public keypair .pem file for ansible playbooks?
+ssh-agent bash
+ssh-add ~/.ssh/keypair.pem
